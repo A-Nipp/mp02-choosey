@@ -52,7 +52,7 @@ This project uses the [Yelp Business Search API](https://www.yelp.com/developers
 
    > Hint: it's path is `p01-choosey/Service/Secrets.swift`
 
-4. Paste your new API key into the placeholder that says **Yelp API Key**. Feel free to delete the commend regarding details.
+4. Paste your new API key into the placeholder that says **Yelp API Key**. Feel free to delete the comment regarding details.
 5. Run your project using **⌘+R** or by pressing the **►** button in Xcode.
 6. Wait for the app to build and run, then play around with the app in the Simulator.
 
