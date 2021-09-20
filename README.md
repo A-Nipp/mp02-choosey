@@ -17,6 +17,9 @@ This project aims to give you two things:
 
 The repository already contains a fully-featured app, **Choosey**, that helps users decide where to eat. As a part of today's meeting, you will be adding a couple of features to help make the user-experience *great*.
 
+This is what we'll be working towards: </br>
+<img src="Screenshots/choosey-demo.gif" alt="Choosey Demo" width="250"/>
+
 ## Installation
 
 Here are the steps to get the starter repo for this project onto your machine and opened with Xcode.
