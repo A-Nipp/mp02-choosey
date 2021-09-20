@@ -13,7 +13,7 @@ struct SearchView: View {
     var body: some View {
         VStack(spacing: 10) {
             MySection(header: Text("What are you interested in?")) {
-                TextField("Enter a search term here...", text: $vm.term)
+                TextField("Enter a search term here...", text: $vm.searchTerm)
             }
 
             MySection(header: Text("How far are you willing to go?")) {

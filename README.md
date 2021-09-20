@@ -29,8 +29,42 @@ Here are the steps to get the starter repo for this project onto your machine an
 
 2. Open the `p01-choosey.xcodeproj` file with Xcode.
 
-### Setup
+## Setup
 
 This project uses the [Yelp Business Search API](https://www.yelp.com/developers/documentation/v3/business_search) to search for restaurants in Chapel Hill. Because of this, we'll need to do some setup to  allow you to run this project on your laptop.
 
-1. Find the folder called `Service` in the Xcode file directory and press the toggle.
+1. Go to [fusion.yelp.com](https://fusion.yelp.com), click "Get Started", create an account, and fill in the following details for your new app.
+
+   > App Name: **p01-choosey**
+   >
+   > Industry: **Food & Drink**
+   >
+   > Contact Email: **<# your email #>**
+   >
+   > Description: **Helps you decide what to eat near you**
+
+2. Submit the form and then copy your new API key to your clipboard.
+
+3. Find the folder called `Secrets` in the Xcode file directory and open it in Xcode.
+
+   > Hint: it's path is `p01-choosey/Service/Secrets.swift`
+
+4. Paste your new API key into the placeholder that says **Yelp API Key**. Feel free to delete the commend regarding details.
+5. Run your project using **⌘+R** or by pressing the **►** button in Xcode.
+6. Wait for the app to build and run, then play around with the app in the Simulator.
+
+### Tasks
+
+- [ ] Find `BusinessListViewModel.swift`
+
+- [ ] Add some code to the beginning the `getPlaces()` method to empty the `businesses` array and return if `searchTerm` is empty.
+
+- [ ] Add a method called `getBestRestaurantId` to the `BusinessListViewModel` class that:
+
+  - [ ] Accepts an array of businesses called `businesses` as a parameter.
+
+  - [ ] Returns a value of type `String`.
+
+  - [ ] In this function, use a `for` loop to find the business with the highest rating. Return that business's `id`.
+
+    > Hint: the `Business` type has properties called `rating` and `id`. `rating` is a Double representing the business's rating (out of 5), and `id` is a String containing a unique identifier for a given business.

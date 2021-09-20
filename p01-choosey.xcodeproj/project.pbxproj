@@ -24,6 +24,7 @@
 		BDA064E726F809D200C24CCE /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064E626F809D200C24CCE /* View+Extensions.swift */; };
 		BDA064E926F80F0F00C24CCE /* MySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064E826F80F0F00C24CCE /* MySection.swift */; };
 		BDA064EB26F81E1800C24CCE /* Business+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064EA26F81E1700C24CCE /* Business+Sorting.swift */; };
+		BDA34ED326F849CC004E34F5 /* Int+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA34ED226F849CC004E34F5 /* Int+Conversion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		BDA064E626F809D200C24CCE /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		BDA064E826F80F0F00C24CCE /* MySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySection.swift; sourceTree = "<group>"; };
 		BDA064EA26F81E1700C24CCE /* Business+Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Business+Sorting.swift"; sourceTree = "<group>"; };
+		BDA34ED226F849CC004E34F5 /* Int+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Conversion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				BDA064D826F7F44900C24CCE /* UIApplication+Website.swift */,
 				BDA064EA26F81E1700C24CCE /* Business+Sorting.swift */,
 				BDA064E626F809D200C24CCE /* View+Extensions.swift */,
+				BDA34ED226F849CC004E34F5 /* Int+Conversion.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				BDA064E926F80F0F00C24CCE /* MySection.swift in Sources */,
 				BD1AB53426F7B199008E0F4E /* ChooseyApp.swift in Sources */,
 				BDA064E226F7FC9B00C24CCE /* BusinessView.swift in Sources */,
+				BDA34ED326F849CC004E34F5 /* Int+Conversion.swift in Sources */,
 				BDA064D126F7E24C00C24CCE /* YelpService.swift in Sources */,
 				BDA064E726F809D200C24CCE /* View+Extensions.swift in Sources */,
 				BDA064E526F8016900C24CCE /* BusinessViewModel.swift in Sources */,

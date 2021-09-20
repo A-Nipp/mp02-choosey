@@ -22,7 +22,7 @@ enum YelpService {
             URLQueryItem(name: "latitude", value: "35.913200"),
             URLQueryItem(name: "longitude", value: "-79.055847"),
             URLQueryItem(name: "term", value: term),
-            URLQueryItem(name: "radius", value: "\(radius)"),
+            URLQueryItem(name: "radius", value: "\(radius.converted(from: .miles, to: .meters))"),
         ]
 
         guard let url = components?.url else {
@@ -32,7 +32,7 @@ enum YelpService {
 
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue("Bearer \(Secrets.yelpApiKey)", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer \(Secrets.yelpAPIKey)", forHTTPHeaderField: "Authorization")
 
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard error == nil, let data = data else {
