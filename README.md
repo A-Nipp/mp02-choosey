@@ -10,14 +10,15 @@
 
 ## Goal
 
-This project aims to give you two things:
+This project aims to do two things:
 
-1. A first exposure to working on a real app in Xcode
-2. A chance to apply your new knowledge of the basic principles of Swift
+1. Give you a first exposure to working on a real app in Xcode
+2. Give you a chance to apply your new knowledge of the basic principles of Swift
 
 The repository already contains a fully-featured app, **Choosey**, that helps users decide where to eat. As a part of today's meeting, you will be adding a couple of features to help make the user-experience *great*.
 
-This is what we'll be working towards: </br>
+This is what we'll be working towards:
+
 <img src="Screenshots/choosey-demo.gif" alt="Choosey Demo" width="250"/>
 
 ## Installation
