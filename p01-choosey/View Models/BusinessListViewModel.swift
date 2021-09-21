@@ -22,7 +22,7 @@ class BusinessListViewModel: ObservableObject {
                 switch result {
                 case .success(let businesses):
                     self.businesses = businesses
-//                    self.highestRatedId = self.getBestRestaurantId(businesses: businesses)
+                    // self.highestRatedId = self.getBestRestaurantId(businesses: businesses)
                 case .failure(let error):
                     self.errorMessage = error.rawValue
                     self.showError = true
