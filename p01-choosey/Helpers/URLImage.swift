@@ -11,7 +11,7 @@ import SwiftUI
 struct URLImage: View {
     @ObservedObject var urlImageModel: Model
     
-    init(urlString: String?) {
+    init(urlString: String) {
         urlImageModel = Model(urlString: urlString)
     }
     
@@ -34,80 +34,49 @@ struct URLImage: View {
 extension URLImage {
     class Model: ObservableObject {
         @Published var image: UIImage?
-        
-        var urlString: String?
-        var imageCache = ImageCache.shared
+        var urlString: String
     
-        init(urlString: String?) {
+        init(urlString: String) {
             self.urlString = urlString
-            loadImage()
-        }
-    
-        func loadImage() {
-            if loadImageFromCache() {
-                return
-            }
-        
-            loadImageFromUrl()
-        }
-    
-        func loadImageFromCache() -> Bool {
-            guard let urlString = urlString else {
-                return false
-            }
-        
-            guard let cacheImage = imageCache.get(forKey: urlString) else {
-                return false
-            }
-        
-            image = cacheImage
-            return true
-        }
-    
-        func loadImageFromUrl() {
-            guard let urlString = urlString, let url = URL(string: urlString) else {
-                return
-            }
-        
-            let task = URLSession.shared.dataTask(with: url, completionHandler: getImageFromResponse(data:response:error:))
-            task.resume()
-        }
-    
-        func getImageFromResponse(data: Data?, response: URLResponse?, error: Error?) {
-            guard error == nil else {
-                print("Error: \(error!)")
-                return
-            }
-            guard let data = data else {
-                print("No data found")
-                return
-            }
-        
-            DispatchQueue.main.async {
-                guard let loadedImage = UIImage(data: data) else {
-                    return
-                }
             
-                self.imageCache.set(forKey: self.urlString!, image: loadedImage)
-                self.image = loadedImage
+            if let cachedImage = ImageCache.shared.getImage(forKey: urlString) {
+                self.image = cachedImage
+            } else {
+                getRemoteImage(urlString: urlString) { remoteImage in
+                    self.image = remoteImage
+                }
             }
+        }
+    
+        func getRemoteImage(urlString: String, completion: @escaping (UIImage?) -> Void) {
+            guard let url = URL(string: urlString) else { return }
+            
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                DispatchQueue.main.async {
+                    guard error == nil,
+                          let data = data,
+                          let image = UIImage(data: data) else {
+                        completion(nil)
+                        return
+                    }
+                    
+                    ImageCache.shared.set(image: image, forKey: urlString)
+                    completion(image)
+                }
+            }.resume()
         }
     }
 
     class ImageCache {
         static var shared = ImageCache()
-
         var cache = NSCache<NSString, UIImage>()
     
-        func get(forKey: String) -> UIImage? {
+        func getImage(forKey: String) -> UIImage? {
             return cache.object(forKey: NSString(string: forKey))
         }
     
-        func set(forKey: String, image: UIImage) {
+        func set(image: UIImage, forKey: String) {
             cache.setObject(image, forKey: NSString(string: forKey))
         }
     }
-}
-
-extension URLImage.ImageCache {
 }

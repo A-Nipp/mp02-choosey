@@ -6,7 +6,7 @@ class BusinessListViewModel: ObservableObject {
     @Published var radius: Int = 1
     
     @Published var businesses: [Business] = []
-    @Published var highestRatedId: String = ""
+    @Published var highestRatedId: String? = nil
     
     @Published var errorMessage: String = ""
     @Published var showError: Bool = false

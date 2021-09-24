@@ -67,7 +67,7 @@ This project uses the [Yelp Business Search API](https://www.yelp.com/developers
 
   - [ ] Accepts an array of businesses called `businesses` as a parameter.
 
-  - [ ] Returns a value of type `String`.
+  - [ ] Returns a value of type `String?`.
 
   - [ ] In this function, use a `for` loop to find the business with the highest rating. Return that business's `id`.
 

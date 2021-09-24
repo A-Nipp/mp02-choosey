@@ -13,7 +13,7 @@
 		BD1AB53826F7B19A008E0F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1AB53726F7B19A008E0F4E /* Assets.xcassets */; };
 		BDA064C926F7B1F000C24CCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDA064C826F7B1F000C24CCE /* Preview Assets.xcassets */; };
 		BDA064D126F7E24C00C24CCE /* YelpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064CF26F7E24B00C24CCE /* YelpService.swift */; };
-		BDA064D226F7E24C00C24CCE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064D026F7E24B00C24CCE /* Models.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BDA064D226F7E24C00C24CCE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064D026F7E24B00C24CCE /* Models.swift */; };
 		BDA064D626F7F0C800C24CCE /* BusinessListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064CD26F7DE3E00C24CCE /* BusinessListViewModel.swift */; };
 		BDA064D926F7F44900C24CCE /* UIApplication+Website.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064D826F7F44900C24CCE /* UIApplication+Website.swift */; };
 		BDA064DC26F7F74200C24CCE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064DB26F7F74200C24CCE /* SearchView.swift */; };
