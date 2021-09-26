@@ -51,7 +51,7 @@ This project uses the [Yelp Business Search API](https://www.yelp.com/developers
 
 3. Find the folder called `Secrets` in the Xcode file directory and open it in Xcode.
 
-   > Hint: it's path is `p01-choosey/Service/Secrets.swift`
+   > Hint: its path is `p01-choosey/Service/Secrets.swift`
 
 4. Paste your new API key into the placeholder that says **Yelp API Key**. Feel free to delete the comment regarding details.
 5. Run your project using **⌘+R** or by pressing the **►** button in Xcode.
