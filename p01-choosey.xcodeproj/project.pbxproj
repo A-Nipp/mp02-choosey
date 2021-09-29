@@ -25,6 +25,7 @@
 		BDA064E926F80F0F00C24CCE /* MySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064E826F80F0F00C24CCE /* MySection.swift */; };
 		BDA064EB26F81E1800C24CCE /* Business+Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA064EA26F81E1700C24CCE /* Business+Sorting.swift */; };
 		BDA34ED326F849CC004E34F5 /* Int+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA34ED226F849CC004E34F5 /* Int+Conversion.swift */; };
+		BDF048D82703FD4700082FCF /* Completed_BusinessListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF048D72703FD4700082FCF /* Completed_BusinessListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		BDA064E826F80F0F00C24CCE /* MySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySection.swift; sourceTree = "<group>"; };
 		BDA064EA26F81E1700C24CCE /* Business+Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Business+Sorting.swift"; sourceTree = "<group>"; };
 		BDA34ED226F849CC004E34F5 /* Int+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Conversion.swift"; sourceTree = "<group>"; };
+		BDF048D72703FD4700082FCF /* Completed_BusinessListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completed_BusinessListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				BDA064CD26F7DE3E00C24CCE /* BusinessListViewModel.swift */,
+				BDF048D72703FD4700082FCF /* Completed_BusinessListViewModel.swift */,
 				BDA064E426F8016900C24CCE /* BusinessViewModel.swift */,
 			);
 			path = "View Models";
@@ -234,6 +237,7 @@
 				BDA34ED326F849CC004E34F5 /* Int+Conversion.swift in Sources */,
 				BDA064D126F7E24C00C24CCE /* YelpService.swift in Sources */,
 				BDA064E726F809D200C24CCE /* View+Extensions.swift in Sources */,
+				BDF048D82703FD4700082FCF /* Completed_BusinessListViewModel.swift in Sources */,
 				BDA064E526F8016900C24CCE /* BusinessViewModel.swift in Sources */,
 				BDA064DE26F7F78900C24CCE /* SearchResultsView.swift in Sources */,
 			);
