@@ -40,7 +40,14 @@ class Completed_BusinessListViewModel: ObservableObject {
     }
     
     func getBestRestaurantId(businesses: [Business]) -> String? {
-        // 
+        // Return the id of the business with the highest rating
+        // - Loop through the businesses array
+        // - Keep track of the current winner
+        // - If the rating of the business you're looking at is higher than the current winner's
+        // - Reassign the current winner to the one you're looking at
+        // - Once we've looped through all elements, our current winner will be the overall winner
+        // - Return its id
+        
         var currentHighestRatedBusiness = businesses[0]
         
         for business in businesses {
