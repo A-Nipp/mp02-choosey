@@ -35,27 +35,11 @@ Here are the steps to get the starter repo for this project onto your machine an
 
 ## Setup
 
-This project uses the [Yelp Business Search API](https://www.yelp.com/developers/documentation/v3/business_search) to search for restaurants in Chapel Hill. Because of this, we'll need to do some setup to  allow you to run this project on your laptop.
-
-1. Go to [fusion.yelp.com](https://fusion.yelp.com), click "Get Started", create an account, and fill in the following details for your new app.
-
-   > App Name: **p01-choosey**
-   >
-   > Industry: **Food & Drink**
-   >
-   > Contact Email: **<# your email #>**
-   >
-   > Description: **Helps you decide what to eat near you**
-
-2. Submit the form and then copy your new API key to your clipboard.
-
-3. Find the folder called `Secrets` in the Xcode file directory and open it in Xcode.
-
-   > Hint: its path is `p01-choosey/Service/Secrets.swift`
-
-4. Paste your new API key into the placeholder that says **Yelp API Key**. Feel free to delete the comment regarding details.
-5. Run your project using **⌘+R** or by pressing the **►** button in Xcode.
-6. Wait for the app to build and run, then play around with the app in the Simulator.
+This project uses the [Yelp Business Search API](https://www.yelp.com/developers/documentation/v3/business_search) to search for restaurants in Chapel Hill.
+1. Open the project in Xcode.
+2. Poke around and explore the code a little bit.
+3. Run your project using **⌘+R** or by pressing the **►** button in Xcode.
+4. Wait for the app to build and run, then play around with the app in the Simulator.
 
 ### Tasks
 

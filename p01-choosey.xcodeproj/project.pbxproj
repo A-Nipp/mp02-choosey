@@ -85,7 +85,7 @@
 				BD1AB53326F7B199008E0F4E /* ChooseyApp.swift */,
 				BDA064DA26F7F73700C24CCE /* Views */,
 				BDA064E326F8015500C24CCE /* View Models */,
-				BDA064D326F7E7A300C24CCE /* Service */,
+				BDA064D326F7E7A300C24CCE /* Model */,
 				BDA064D726F7F43D00C24CCE /* Helpers */,
 				BD1AB54226F7B1A9008E0F4E /* Support */,
 			);
@@ -110,14 +110,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BDA064D326F7E7A300C24CCE /* Service */ = {
+		BDA064D326F7E7A300C24CCE /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BDA064CF26F7E24B00C24CCE /* YelpService.swift */,
 				BDA064D026F7E24B00C24CCE /* Models.swift */,
 				BD15051126F833DA009FC72E /* Secrets.swift */,
 			);
-			path = Service;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BDA064D726F7F43D00C24CCE /* Helpers */ = {
