@@ -37,7 +37,7 @@ This project uses the [Yelp Business Search API](https://www.yelp.com/developers
 
 - [ ] Find `BusinessListViewModel.swift`
 
-- [ ] Add some code to the beginning the `getPlaces()` method to empty the `businesses` array and return if `searchTerm` is empty.
+- [ ] Add some code to the beginning the `getPlaces()` method so that if `searchTerm` is empty, you empty the `businesses` array and return.
 
 - [ ] Add a method called `getBestRestaurantId` to the `BusinessListViewModel` class that:
 
