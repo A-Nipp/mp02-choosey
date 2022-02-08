@@ -47,7 +47,6 @@ enum YelpService {
                 print(String(describing: error))
                 completion(.failure(.missingData))
             }
-
         }.resume()
     }
 }
