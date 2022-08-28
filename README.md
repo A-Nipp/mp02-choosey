@@ -1,4 +1,4 @@
-# Academy Project 01 – Choosey
+# Academy Mini-Project 02 – Choosey
 
 ## Goal
 
@@ -17,10 +17,10 @@ This is what we'll be working towards:
 
 Here are the steps to get the starter repo for this project onto your machine and opened with Xcode.
 
-1. Clone this repository onto your computer. I recommend that you create a new directory specifically for your App Team Carolina work. Run the following command in your Terminal (while "cd'ed" into your App Team directory) to clone this repo:
+1. Clone this repository onto your computer. I recommend that you create a new directory specifically for your App Team Carolina work.Run the following command in your Terminal (while "cd'ed" into your App Team directory) to clone this repo. Replace the `https://github.com/REPO_NAME` with the actual URL of your repo.
 
    ```bash
-   # git clone https://github.com/appteamcarolina/p01-choosey.git
+   # git clone https://github.com/REPO_NAME
    ```
 
 2. Open the `p01-choosey.xcodeproj` file with Xcode.
