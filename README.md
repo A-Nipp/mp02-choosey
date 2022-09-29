@@ -48,3 +48,21 @@ This project uses the [Yelp Business Search API](https://www.yelp.com/developers
   - [ ] In this function, use a `for` loop to find the business with the highest rating. Return that business's `id`.
 
     > Hint: the `Business` type has properties called `rating` and `id`. `rating` is a Double representing the business's rating (out of 5), and `id` is a String containing a unique identifier for a given business.
+ 
+### Optional Tasks
+- [ ] Make the `Business` struct printable. Look into the `CustomStringConvertible` protocol and making a computed property called `description` that returns a string.
+
+   - [ ] Check if this works using the `print()` method. Maybe call this in the `getPlaces()` method.
+
+- [ ] Make an `enum` called `VerbalRating`. This will be how we convert the `Double` value of `rating` to something a little more human-readable.
+
+   - [ ] The `enum` should have a custom initializer that accepts the rating as a `Double`. It should then set its own value to be one of at least three possibilities: `.bad` is any rating in [0,2), `.mid` is any rating in [2,4), etc. Use a switch statement for this.
+   
+   - [ ] Create a function in the `enum` called `getStringRepresentation()` that returns a `String` descriptor. This function should use a `switch` statement on `self` and have representations for `case .bad`, `case .mid`, etc.
+   
+   - [ ] Add a new computed property called `verbalRating` of type `VerbalRating` to the `Business` struct. It should call the constructor of `VerbalRating`. 
+   
+- [ ] Make a `fakeReview` computed property that returns a fake review constructed with string interpolation. Have it incorporate data from the `struct` itself. Use the `getStringRepresentation()` method of `verbalRating`. Maybe have the review mention the city the restaurant is in. 
+
+- [ ] Freestyle some more! Maybe change the `BusinessView` to display some more data from the `Business` model.
+   
