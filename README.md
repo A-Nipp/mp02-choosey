@@ -1,4 +1,4 @@
-# Academy Mini-Project 02 – Choosey
+# Choosey
 
 ## Goal
 
@@ -53,10 +53,14 @@ This project uses the [Yelp Business Search API](https://www.yelp.com/developers
 - [ ] Make the `Business` struct printable. Look into the `CustomStringConvertible` protocol and making a computed property called `description` that returns a string.
 
    - [ ] Check if this works using the `print()` method. Maybe call this in the `getPlaces()` method.
+   
+- [ ] Make a computed property called `verbalPricing` that returns a `String` representing (qualitatively) how expensive a restaurant is based on its `price` property. For example, if `price` is `"$"` or `"$$"`, the value of this property should be "cheap".
 
-- [ ] Make an `enum` called `VerbalRating`. This will be how we convert the `Double` value of `rating` to something a little more human-readable.
+   - [ ] For this one, try using a `guard` statement to unwrap the `price` property, which is of the `Optional` type `String?`
 
-   - [ ] The `enum` should have a custom initializer that accepts the rating as a `Double`. It should then set its own value to be one of at least three possibilities: `.bad` is any rating in [0,2), `.mid` is any rating in [2,4), etc. Use a switch statement for this.
+- [ ] Make an `enum` called `VerbalRating`. This will be how we convert the `Double` value of `rating` to something a little more human-readable. It should enumerate a few possible ratings: `good, bad, mid`.
+
+   - [ ] The `enum` should have a `static` function that accepts the rating as a `Double`. It should then return one of the three possibilities: `.bad` is any rating in [0,2), `.mid` is any rating in [2,4), etc. Use a switch statement for this.
    
    - [ ] Create a function in the `enum` called `getStringRepresentation()` that returns a `String` descriptor. This function should use a `switch` statement on `self` and have representations for `case .bad`, `case .mid`, etc.
    
